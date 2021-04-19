@@ -2,5 +2,6 @@
   "main.js": "render-page.js",
   "render-page.js.map": "render-page.js.map",
   "static/byc.svg": "static/byc-e0abda7e2f273ffd28a2b2f4b049b746.svg",
-  "static/landing_bg.jpg": "static/landing_bg-8fa22088b71582c2c25154ace9c0b2a5.jpg"
+  "static/landing_bg.jpg": "static/landing_bg-8fa22088b71582c2c25154ace9c0b2a5.jpg",
+  "static/splunk.jpg": "static/splunk-d6893c4daca04749fcd52b9c4370d254.jpg"
 }
