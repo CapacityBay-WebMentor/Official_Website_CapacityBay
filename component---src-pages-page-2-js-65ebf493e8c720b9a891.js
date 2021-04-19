@@ -1,0 +1,2 @@
+(self.webpackChunkgatsby_capabay=self.webpackChunkgatsby_capabay||[]).push([[617],{9863:function(e,a,t){"use strict";t.r(a);var n=t(7294),u=t(5553);t(3751);a.default=function(e){return n.createElement("div",null,n.createElement(u.Z,null))}}}]);
+//# sourceMappingURL=component---src-pages-page-2-js-65ebf493e8c720b9a891.js.map
