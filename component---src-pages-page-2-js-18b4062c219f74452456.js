@@ -1,0 +1,2 @@
+(self.webpackChunkgatsby_capabay=self.webpackChunkgatsby_capabay||[]).push([[617],{9863:function(a,c,s){"use strict";s.r(c);s(7294);c.default=function(){}}}]);
+//# sourceMappingURL=component---src-pages-page-2-js-18b4062c219f74452456.js.map
