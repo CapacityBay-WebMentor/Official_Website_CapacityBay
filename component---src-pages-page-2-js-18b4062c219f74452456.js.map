@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://gatsby-capabay/./src/pages/page-2.js"],"names":[],"mappings":"oIAKA,UAHc","file":"component---src-pages-page-2-js-18b4062c219f74452456.js","sourcesContent":["import React from 'react'\r\n\r\nconst Page2 = ()=>{\r\n    \r\n}\r\nexport default Page2"],"sourceRoot":""}
