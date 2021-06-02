@@ -14,6 +14,7 @@ import {useMediaQuery} from '@material-ui/core/useMediaQuery'
 import Drawer from '../navbar/DrawerComponent/drawer'
 import { Height } from '@material-ui/icons'
 import NavLogo from '../../images/Capacity-Bay-4-footer.png'
+//import {Switch} from 'react-router-dom'
 
 
 const useStyles= makeStyles((theme)=>({
