@@ -26,7 +26,7 @@ const useStyles= makeStyles((theme)=>({
         [theme.breakpoints.down('md')]:{
             fontSize: '1rem',
             marginTop: '70px',
-            width: '400px',
+            width: '300px',
         },
         [theme.breakpoints.up('md')]:{
             fontSize: '2rem',

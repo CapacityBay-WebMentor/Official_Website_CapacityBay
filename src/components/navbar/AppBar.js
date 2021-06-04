@@ -27,6 +27,9 @@ const useStyles= makeStyles((theme)=>({
     },
     appBarScroll:{
         backgroundColor: '#4A4A4A',
+        [theme.breakpoints.down('md')]:{
+            background: 'transparent',
+        }
     },
     toolBox:{
         display: 'flex',
@@ -52,9 +55,6 @@ const useStyles= makeStyles((theme)=>({
         top: '20px',
         left: '40px',
     },
-    btn:{
-        grow: 1,
-    }
 }))
 
 export default function ButtonAppBar(){
@@ -62,6 +62,8 @@ export default function ButtonAppBar(){
     const theme = useTheme()
 
      const [Nav, setNav] = useState('appBarScroll')
+     const [placer, setPlacer] = useState('Register')
+
      const navRef = React.useRef();
      navRef.current = Nav     
    
@@ -71,18 +73,19 @@ export default function ButtonAppBar(){
             const show = window.scrollY > 310
             // The command to the rule
             if(show){
-                setNav('appBarCroll')
+                setNav('appBarScroll')
             }else{
                 setNav('appBarTrans')
             }
         }
-        // Event listener
+            // Event listener
         document.addEventListener('scroll', handleScroll)
         // Remove Event listener
         return() => {document.removeEventListener('scroll', handleScroll)}
      },[])
 
-
+     
+  
     return(
         <div>
         <AppBar position="fixed" className={classes[Nav]}>

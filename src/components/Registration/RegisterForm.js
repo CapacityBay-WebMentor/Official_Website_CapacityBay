@@ -6,10 +6,16 @@ import { Typography, responsiveFontSizes, createMuiTheme, ThemeProvider, MuiThem
 import { colors, Grow, useMediaQuery, useTheme} from "@material-ui/core"
 import { Link } from "gatsby"
 import back from '../../images/arrow-back.png'
+import { withArtDirection } from 'gatsby-plugin-image';
 
 const useStyles= makeStyles((theme)=>({
-    
- 
+    formc:{
+        width: '80%',
+        height: '400px',
+        [theme.breakpoints.down('md')]:{
+            width: '100%',
+        }
+    }
 }))
 
 
@@ -20,6 +26,19 @@ function RegisterForm() {
         <div className="reg-wrapper">
             <Grid container>
                 <Grid item xs={12} className="go-back-link"><Link to="/register" className="link-back">Back<img src={back} /></Link></Grid>
+                <Grid item xs={12} className="text-container">
+                    <h2>CapacityBay Partner Registration</h2>
+                    <p>Step: 1 General Information</p>
+                </Grid>
+                <Grid item md={12} className={classes.formc}>
+                    <div className="realCont">
+                        <div class="partOne sty">
+                            <h1>the man</h1>
+                        </div>
+                        <div class="partTwo sty">
+                        </div>
+                    </div>
+                </Grid>
             </Grid>
         </div>
     )

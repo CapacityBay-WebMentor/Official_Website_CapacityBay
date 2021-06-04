@@ -27,6 +27,9 @@
   margin:  0 auto;
   position: relative;
 }
+.btn{
+  border: 1px solid grey;
+}
 a.btn{
   position: absolute;
   right: 100px;
