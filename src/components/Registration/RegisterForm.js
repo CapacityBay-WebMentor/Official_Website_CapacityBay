@@ -32,11 +32,20 @@ function RegisterForm() {
                 </Grid>
                 <Grid item md={12} className={classes.formc}>
                     <div className="realCont">
+                    <div className="full-col-text">
+                        <h2>CapacityBay Partner Registration</h2>
+                        <p>Step: 1 General Information</p>
+                    </div>
+                    <div className="sty-wrapper">
                         <div class="partOne sty">
-                            <h1>the man</h1>
+                            <div className="form-group">
+                                
+                            </div>
                         </div>
                         <div class="partTwo sty">
+                            <h1>the woman</h1>
                         </div>
+                    </div>
                     </div>
                 </Grid>
             </Grid>
