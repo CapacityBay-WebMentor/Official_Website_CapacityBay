@@ -1,16 +1,16 @@
 import React from 'react'
 import reg from '../../components/Registration/reg.css'
+import Layout from "../../components/layout"
 import Grid from '@material-ui/core/Grid';
-import {makeStyles} from '@material-ui/core/styles'
+import { makeStyles } from '@material-ui/core/styles'
 import { Typography, responsiveFontSizes, createMuiTheme, ThemeProvider, MuiThemeProvider  } from '@material-ui/core';
-import { colors, Grow, useMediaQuery, useTheme} from "@material-ui/core"
+import { colors, Grow, useMediaQuery, useTheme } from "@material-ui/core"
 import { Link } from "gatsby"
 import back from '../../images/arrow-back.png'
-import { withArtDirection } from 'gatsby-plugin-image';
-import Layout from "../../components/layout"
+
 
 const useStyles= makeStyles((theme)=>({
-    formc:{
+    formCont:{
         width: '80%',
         height: '400px',
         [theme.breakpoints.down('md')]:{
@@ -32,7 +32,7 @@ function Intro() {
                         <h2>CapacityBay Partner Registration</h2>
                         <p>Step: 1 General Information</p>
                     </Grid>
-                    <Grid item md={12} className={classes.formc}>
+                    <Grid item md={12} className={classes.formCont}>
                         <div className="realCont first">
                             <div className="top">
                             </div>

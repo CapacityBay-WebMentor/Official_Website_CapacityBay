@@ -24,7 +24,7 @@
     width: 70px;
     font-size: 1rem;
     text-align: right;
-    margin-top: 50px;
+    margin-top: 140px;
 }
 .link-back:hover.link-back img{
     cursor: pointer;
@@ -116,6 +116,7 @@
     display: flex;
     justify-content: space-between;
 }
+
 @media(max-width: 786px){
     .link-back{
         position: absolute;

@@ -99,7 +99,7 @@ export default function ButtonAppBar(){
                 <Link to="/contact2" className={classes.link}>Contact</Link>
             </Toolbar>            
         </div>
-        <Link to="/register" className="btn">Register</Link>
+        <Link to="/register/step1" className="btn">Register</Link>
         </AppBar>
     </div>
     )
