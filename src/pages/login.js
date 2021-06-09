@@ -1,14 +1,14 @@
 import React from 'react'
-import reg from '../../components/Registration/reg.css'
-import Layout from "../../components/layout"
+import reg from '../components/layout'
+import Layout from "../components/layout"
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles'
 import { Typography, responsiveFontSizes, createMuiTheme, ThemeProvider, MuiThemeProvider  } from '@material-ui/core';
 import { colors, Grow, useMediaQuery, useTheme } from "@material-ui/core"
 import { Link } from "gatsby"
-import back from '../../images/arrow-back.png'
 import { yellow } from '@material-ui/core/colors';
-import NavLogo from '../../images/Capacity-Bay-4-footer.png'
+import back from '../images/arrow-back.png'
+
 
 
 const useStyles= makeStyles((theme)=>({
@@ -21,15 +21,11 @@ const useStyles= makeStyles((theme)=>({
     },
     img:{
         width: '200px',
-    },
-    divide50:{
-        width: '100%',
-        height: '340px',
     }
 }))
 
 
-function Intro() {
+function Login() {
     const classes = useStyles()
 
     return (
@@ -38,7 +34,7 @@ function Intro() {
                 <Grid container>
                     <Grid item xs={12} className="go-back-link"><Link to="/register" className="link-back">Back<img src={back} /></Link></Grid>
                     <Grid item xs={12} className="text-container">
-                        <img src={NavLogo} className={classes.img}/>
+                    
                     </Grid>
                     <Grid item md={12} className={classes.formCont}>
                         <div className="realCont first">
@@ -51,17 +47,15 @@ function Intro() {
                               <div class="button-group">
                                 <Link to="/register/one" className="getSt sty">GET STARTED<span></span></Link>
                                     <div class="separator">OR</div>
-                                <Link to="/login" className="acc sty">GOT AN ACCOUNT<span></span></Link>
+                                <Link to="#" className="acc sty">GOT AN ACCOUNT<span></span></Link>
                               </div>
                             </div>
                         </div>
-                        <div className={classes.divide50}></div>
                     </Grid>
-                    <div className={classes.divide50}></div>
                 </Grid>
             </div>
         </Layout>
     )
 }
 
-export default Intro
+export default Login

@@ -26,8 +26,8 @@ const useStyles= makeStyles(()=>({
         alignItems: "center",
         justifyContent: "center",
         position: 'absolute',
-        top: '130px',
-        left: '43%',
+        top: '190px',
+        left: '36%',
         [theme.breakpoints.down('md')]:{
             fontSize: '1rem',
             position: 'absolute',
@@ -50,7 +50,7 @@ const AbTop = ({location})=>{
             <Grid container className="gridCont">
                 <Grid item className="gridItem" xs={12}>
                     <MuiThemeProvider theme={theme}>            
-                    <Typography variant="h1" gutterBottom className={classes.TypographyText}>Why data maters</Typography>                  
+                    <Typography variant="h1" gutterBottom className={classes.TypographyText}>What are we at CapacityBay</Typography>                  
                     </MuiThemeProvider>
                 </Grid>
                 <Grid item className="itemLower h" sm={6} xs={6}>
@@ -60,16 +60,14 @@ const AbTop = ({location})=>{
                     <img src={buildSon}/>
                 </Grid>   
                 
-                <Grid item className="itemText" md={6} xs={12}>
+                <Grid item className="itemText" md={12} xs={12}>
                     <MuiThemeProvider theme={theme}>            
                     <Typography gutterBottom className={classes.h3}>Data is gold, the reason for the trends on it</Typography>
                     <Typography variant="body" gutterBottom className={classes.textBody}>College isn’t just a place to learn. It’s where you’ll find a community filled with new people and have new experiences. It’s where you’ll make friends for life and learn important lessons about yourself. It's where you'll go to reach new heights.</Typography>                  
                     </MuiThemeProvider>
                 </Grid>
 
-                <Grid item className="item-space" xs={6}>
-                
-                </Grid> 
+              
                 </Grid>
     )
 }

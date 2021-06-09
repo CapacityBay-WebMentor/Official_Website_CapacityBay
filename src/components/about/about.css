@@ -12,6 +12,9 @@
 .itemLower{
   position: relative;
 }
+.gridItem{
+    background-color: red;
+}
 .itemLower img{
   width: 100px; 
   position: absolute;
