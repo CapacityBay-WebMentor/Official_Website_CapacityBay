@@ -24,7 +24,8 @@ const useStyles= makeStyles((theme)=>({
     },
     divide50:{
         width: '100%',
-        height: '340px',
+        height: '140px',
+        marginTop: '200px',
     }
 }))
 
@@ -49,13 +50,13 @@ function Intro() {
                                 <p>Welcome to your growth space. Signing up with us is a declaration of your desire to grow your finance and your dreams this year and beyond even as we grow our businesses and brands. This new partnership opens a door to quick, easy and secure investment for you. Welcome</p>
                               </div>
                               <div class="button-group">
-                                <Link to="/register/one" className="getSt sty">GET STARTED<span></span></Link>
+                                <Link to="/auth/one" className="getSt sty">GET STARTED<span></span></Link>
                                     <div class="separator">OR</div>
                                 <Link to="/login" className="acc sty">GOT AN ACCOUNT<span></span></Link>
                               </div>
                             </div>
                         </div>
-                        <div className={classes.divide50}></div>
+                    
                     </Grid>
                     <div className={classes.divide50}></div>
                 </Grid>

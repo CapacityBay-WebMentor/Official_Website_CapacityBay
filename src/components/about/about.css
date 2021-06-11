@@ -4,10 +4,17 @@
     margin-bottom: 300px;
 }
 .itemText{
-    height: 600px;
-    padding: 57px 30px;
+    height: 300px;
+    padding: 57px 100px;
     margin-top: 100px;
-    background-color: red;
+    background-color: #f3f3f3;
+    font-size: 1.3rem;
+}
+.itemText2{
+    background-color: #81d88c; 
+}
+.itemText3{
+    background-color: #9a98db; 
 }
 .itemLower{
   position: relative;
@@ -43,8 +50,7 @@
     padding: 40px;
 }
 .gridCont{
-        background-color: '#096A3D';
-        background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+        background-color: '#4a4a4a';
 }
 
 @media(max-width: 786px){

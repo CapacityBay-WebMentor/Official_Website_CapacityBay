@@ -9,7 +9,18 @@ import back from '../../images/arrow-back.png'
 import NavLogo from '../../images/Capacity-Bay-4-footer.png'
 import { red } from '@material-ui/core/colors';
 //import { faSearch } from "react-icons/faSearch";
-import { BsFillPersonFill } from "react-icons/bs";
+import { 
+    BsFillPersonFill, 
+    BsFillAwardFill,
+    BsFillEnvelopeFill,
+    BsFillUnlockFill,
+    BsFilePost,
+    BsHeartFill,
+    BsPeopleFill,
+    BsGeo,
+    BsHouseFill,
+    BsGeoAlt,
+ } from "react-icons/bs";
 
 
 const useStyles= makeStyles((theme)=>({
@@ -25,18 +36,18 @@ const useStyles= makeStyles((theme)=>({
     },
     formCont:{
         maxWidth: '800px',
-        backgroundColor: 'white',
         margin: '0 auto',
     },
     formContainer:{
         maxWidth: '800px',
-        height: '800px',
         backgroundColor: '#dee9f9',
+        paddingTop: '30px',
         borderRadius: '15px',
         transform: 'translateY(10px)',
         [theme.breakpoints.down('sm')]:{
-            maxWidth: '100%',
-
+            maxWidth: '90%',
+            borderRadius: '0',
+            margin: '0 auto'
         }
     },
     flexCont:{
@@ -90,26 +101,26 @@ function RegisterForm() {
 
                         
                         <div className={classes.flexCont}>
-                            <div className={classes.inputWrap}><span className = "inlineSpan inlineSpan"><BsFillPersonFill className="icon"/></span><input type="text" placeholder="Enter a text in here" className="inputText"/></div>
-                            <div className={classes.inputWrap}><span className = "inlineSpan1 inlineSpan"><BsFillPersonFill className="icon"/></span><input type="text" placeholder="Enter a text in here" className="inputText"/></div>
-                            <div className={classes.inputWrap}><span className = "inlineSpan2 inlineSpan"><BsFillPersonFill className="icon"/></span><input type="text" placeholder="Enter a text in here" className="inputText"/></div>
-                            <div className={classes.inputWrap}><span className = "inlineSpan3 inlineSpan"><BsFillPersonFill className="icon"/></span><input type="text" placeholder="Enter a text in here" className="inputText"/></div>
-                            <div className={classes.inputWrap}><span className = "inlineSpan4 inlineSpan"><BsFillPersonFill className="icon"/></span><input type="text" placeholder="Enter a text in here" className="inputText"/></div>
-                            <div className={classes.inputWrap}><span className = "inlineSpan5 inlineSpan"><BsFillPersonFill className="icon"/></span><input type="text" placeholder="Enter a text in here" className="inputText"/></div>
-                            <div className={classes.inputWrap}><span className = "inlineSpan6 inlineSpan"><BsFillPersonFill className="icon"/></span><input type="text" placeholder="Enter a text in here" className="inputText"/></div>
-                            <div className={classes.inputWrap}><span className = "inlineSpan7 inlineSpan"><BsFillPersonFill className="icon"/></span><input type="text" placeholder="Enter a text in here" className="inputText"/></div>
-                            <div className={classes.inputWrap}><span className = "inlineSpan8 inlineSpan"><BsFillPersonFill className="icon"/></span><input type="text" placeholder="Enter a text in here" className="inputText"/></div>
-                            <div className={classes.inputWrap}><span className = "inlineSpan9 inlineSpan"><BsFillPersonFill className="icon"/></span><input type="text" placeholder="Enter a text in here" className="inputText"/></div>
-                            <div className={classes.inputWrap}><span className = "inlineSpan10 inlineSpan"><BsFillPersonFill className="icon"/></span><input type="text" placeholder="Enter a text in here" className="inputText"/></div>
-                            <div className={classes.inputWrap}><span className = "inlineSpan10 inlineSpan"> <BsFillPersonFill className="icon"/></span> <input type="text" placeholder="Enter a text in here" className="inputText"/></div>
+                            <div className={classes.inputWrap}><span className = "inlineSpan inlineSpan"><BsFillPersonFill className="icon"/></span><input type="text" placeholder="First Name" className="inputText"/></div>
+                            <div className={classes.inputWrap}><span className = "inlineSpan1 inlineSpan"><BsFillPersonFill className="icon"/></span><input type="text" placeholder="Last Name" className="inputText"/></div>
+                            <div className={classes.inputWrap}><span className = "inlineSpan2 inlineSpan"><BsFillAwardFill className="icon"/></span><input type="text" placeholder="Username" className="inputText"/></div>
+                            <div className={classes.inputWrap}><span className = "inlineSpan3 inlineSpan"><BsFillEnvelopeFill className="icon"/></span><input type="text" placeholder="Email" className="inputText"/></div>
+                            <div className={classes.inputWrap}><span className = "inlineSpan4 inlineSpan"><BsFilePost className="icon"/></span><input type="text" placeholder="Phone" className="inputText"/></div>
+                            <div className={classes.inputWrap}><span className = "inlineSpan5 inlineSpan"><BsFillUnlockFill className="icon"/></span><input type="text" placeholder="Password" className="inputText"/></div>
+                            <div className={classes.inputWrap}><span className = "inlineSpan6 inlineSpan"><BsHeartFill className="icon"/></span><input type="text" placeholder="Gender" className="inputText"/></div>
+                            <div className={classes.inputWrap}><span className = "inlineSpan7 inlineSpan"><BsPeopleFill className="icon"/></span><input type="text" placeholder="Marital Status" className="inputText"/></div>
+                            <div className={classes.inputWrap}><span className = "inlineSpan8 inlineSpan"><BsGeo className="icon"/></span><input type="text" placeholder="Address" className="inputText"/></div>
+                            <div className={classes.inputWrap}><span className = "inlineSpan9 inlineSpan"><BsHouseFill className="icon"/></span><input type="text" placeholder="City" className="inputText"/></div>
+                            <div className={classes.inputWrap}><span className = "inlineSpan10 inlineSpan"><BsGeoAlt className="icon"/></span><input type="text" placeholder="State" className="inputText"/></div>
+                            <div className={classes.inputWrap}><span className = "inlineSpan10 inlineSpan"> <BsFillPersonFill className="icon"/></span> <input type="text" placeholder="Select Country" className="inputText"/></div>
                         
                         </div>
 
                         <div className="agree"><input type="checkbox" />Agree to <Link>Terms & Conditions</Link></div>
                         <div className="threeSets">
-                            <Link to="">Next Step</Link>
-                            <span>OR</span>
-                            <Link to="">Next Step</Link>
+                            <button to="">Next Step</button>
+                            <div class="separator">OR</div>
+                            <button to="/login">Got an Account</button>
                         </div>
                     </Grid>
                 </Grid>

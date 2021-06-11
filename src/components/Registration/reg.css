@@ -7,7 +7,7 @@
 .reg-wrapper{
     width: 100%;
     position: relative;
-    background-color: rgb(29, 7, 90);
+    background-color: rgb(62, 168, 110);
     background-image: url("../../images/background.svg");
     background-position: center;
     background-repeat: no-repeat;
@@ -113,8 +113,12 @@
     height: 45px;
     font-size: 16px;
     border: none;
-    transition: all 0.3s ease;    
+    transition: all 0.3s ease;   
+    background-color: rgb(100, 180, 117); 
+    padding-left: 10px;
+    color: white;
 }
+
 .radioGroup{
     display: flex;
     justify-content: space-between;
@@ -127,8 +131,33 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 30px;
+    height: 100px;
+    margin-top: 40px;
     background-color: red;
+    position: relative;
+}
+.threeSets span{
+    font-size: .59rem;
+}
+.threeSets a{
+    padding: 9px 243px;
+    font-size: .79rem;
+    border-radius: 7px;
+    position: absolute;
+}
+.threeSets a:hover{
+    text-decoration: none;
+    color: white;
+}
+.threeSets a:nth-child(1){
+    color: rgb(248, 248, 248);
+    background-color: rgb(69, 163, 89);
+    
+}
+.threeSets a:nth-child(3){
+    color: rgb(248, 248, 248);
+    background-color: #1937e4;
+    padding: 9px 243px;
 }
 .icon{
     position: absolute;
@@ -219,7 +248,7 @@
   .separator::after {
     content: '';
     flex: 1;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid rgb(110, 108, 108);
   }
   
   .separator:not(:empty)::before {
@@ -271,7 +300,8 @@
 
 @media(max-width: 786px){
     .reg-wrapper{
-        height: 150vh;
+        height: auto;
+        margin-bottom: '60px';
     }
     .link-back{
         position: absolute;

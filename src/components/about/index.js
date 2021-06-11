@@ -27,7 +27,7 @@ const useStyles= makeStyles(()=>({
         justifyContent: "center",
         position: 'absolute',
         top: '190px',
-        left: '36%',
+        left: '40%',
         [theme.breakpoints.down('md')]:{
             fontSize: '1rem',
             position: 'absolute',
@@ -42,7 +42,8 @@ const useStyles= makeStyles(()=>({
         [theme.breakpoints.down('sm')]:{
             fontSize: '1rem',
         }
-    }
+    },
+ 
 }))
 const AbTop = ({location})=>{
     const classes = useStyles()    
@@ -50,7 +51,7 @@ const AbTop = ({location})=>{
             <Grid container className="gridCont">
                 <Grid item className="gridItem" xs={12}>
                     <MuiThemeProvider theme={theme}>            
-                    <Typography variant="h1" gutterBottom className={classes.TypographyText}>What are we at CapacityBay</Typography>                  
+                    <Typography variant="h1" gutterBottom className={classes.TypographyText}>What is CapacityBay</Typography>                  
                     </MuiThemeProvider>
                 </Grid>
                 <Grid item className="itemLower h" sm={6} xs={6}>
@@ -62,12 +63,26 @@ const AbTop = ({location})=>{
                 
                 <Grid item className="itemText" md={12} xs={12}>
                     <MuiThemeProvider theme={theme}>            
-                    <Typography gutterBottom className={classes.h3}>Data is gold, the reason for the trends on it</Typography>
-                    <Typography variant="body" gutterBottom className={classes.textBody}>College isn’t just a place to learn. It’s where you’ll find a community filled with new people and have new experiences. It’s where you’ll make friends for life and learn important lessons about yourself. It's where you'll go to reach new heights.</Typography>                  
+                    <Typography gutterBottom className={classes.h3}>Objective</Typography>
+                    <Typography variant="body" gutterBottom className={classes.textBody}>The main objective of Cultivate-Africa is to unlock a concerted multi-stakeholder partnership toward a sustained and effective response leading to averting potential adverse effects of the COVID-19 pandemic on food security and nutrition and food systems (production, distribution, trading and market access of agricultural commodities and services)..</Typography>                 
                     </MuiThemeProvider>
                 </Grid>
 
+                <Grid item className="itemText itemText2" md={12} xs={12}>
+                    <MuiThemeProvider theme={theme}>            
+                    <Typography gutterBottom className={classes.h3}>What we do with data</Typography>
+                    <Typography variant="body" gutterBottom className={classes.textBody}>College isn’t just a place to learn. It’s where you’ll find a community filled with new people and have new experiences. It’s where you’ll make friends for life and learn important lessons about yourself. It's where you'll go to reach new heights.</Typography>                 
+                    </MuiThemeProvider>
+                </Grid>
               
+                <Grid item className="itemText" md={12} xs={12}>
+                    <MuiThemeProvider theme={theme}>            
+                    <Typography gutterBottom className={classes.h3}>Data is gold</Typography>
+                    <Typography variant="body" gutterBottom className={classes.textBody}>College isn’t just a place to learn. It’s where you’ll find a community filled with new people and have new experiences. It’s where you’ll make friends for life and learn important lessons about yourself. It's where you'll go to reach new heights.</Typography>                 
+                    </MuiThemeProvider>
+
+                    
+                </Grid>
                 </Grid>
     )
 }

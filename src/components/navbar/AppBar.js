@@ -23,12 +23,18 @@ const useStyles= makeStyles((theme)=>({
         boxShadow: 'none',
         [theme.breakpoints.down('md')]:{
             width: '100%',
+        },
+        [theme.breakpoints.down('xs')]:{
+            display: 'none',
         }
     },
     appBarScroll:{
         backgroundColor: '#4A4A4A',
         [theme.breakpoints.down('md')]:{
             background: 'transparent',
+        },
+        [theme.breakpoints.down('xs')]:{
+            display: 'none',
         }
     },
     toolBox:{
@@ -62,7 +68,7 @@ export default function ButtonAppBar(){
     const theme = useTheme()
 
      const [Nav, setNav] = useState('appBarScroll')
-     const [placer, setPlacer] = useState('Register')
+     
 
      const navRef = React.useRef();
      navRef.current = Nav     
@@ -99,7 +105,7 @@ export default function ButtonAppBar(){
                 <Link to="/contact2" className={classes.link}>Contact</Link>
             </Toolbar>            
         </div>
-        <Link to="/register/step1" className="btn">Register</Link>
+        <Link to="/auth/step1" className="btn">Register</Link>
         </AppBar>
     </div>
     )

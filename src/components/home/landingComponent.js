@@ -41,6 +41,8 @@ const useStyles= makeStyles((theme)=>({
     h3: {
         color: '#af221f',
         fontSize: '1.5rem',
+        paddingLeft: '250px',
+        marginTop: '11px',
         [theme.breakpoints.down('md')]:{
             paddingLeft: '20px',
         }

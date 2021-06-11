@@ -14,13 +14,21 @@ import back from '../images/arrow-back.png'
 const useStyles= makeStyles((theme)=>({
     formCont:{
         width: '80%',
-        height: '400px',
+        height: '600px',
         [theme.breakpoints.down('md')]:{
             width: '100%',
         }
     },
     img:{
         width: '200px',
+    },
+    realCont:{
+        maxWidth: '25%',
+        height: '530px',
+        margin: '0 auto',
+        backgroundColor: '#f1f5f8',
+        borderRadius: '15px',
+        padding: '2px 25px'
     }
 }))
 
@@ -37,19 +45,8 @@ function Login() {
                     
                     </Grid>
                     <Grid item md={12} className={classes.formCont}>
-                        <div className="realCont first">
-                            <div className="top">
-                              <h4>Welcome to CapacityBay Registration</h4>
-                              <p>Step 0: Welcome</p>
-                              <div className="getStarted">
-                                <p>Welcome to your growth space. Signing up with us is a declaration of your desire to grow your finance and your dreams this year and beyond even as we grow our businesses and brands. This new partnership opens a door to quick, easy and secure investment for you. Welcome</p>
-                              </div>
-                              <div class="button-group">
-                                <Link to="/register/one" className="getSt sty">GET STARTED<span></span></Link>
-                                    <div class="separator">OR</div>
-                                <Link to="#" className="acc sty">GOT AN ACCOUNT<span></span></Link>
-                              </div>
-                            </div>
+                        <div className={classes.realCont}>
+                         
                         </div>
                     </Grid>
                 </Grid>
