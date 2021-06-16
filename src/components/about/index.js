@@ -60,7 +60,7 @@ const AbTop = ({location})=>{
                 <div className={classes.stickyIcons}></div>
                 <Grid item className="gridItem" xs={12}>
                     <MuiThemeProvider theme={theme}>            
-                    <Typography variant="h1" gutterBottom className={classes.TypographyText}>What is CapacityBay</Typography>                  
+                    <Typography variant="h1" gutterBottom className={classes.TypographyText}>About CapacityBay Inc</Typography>                  
                     </MuiThemeProvider>
                 </Grid>
                 <Grid item className="itemLower h" sm={6} xs={6}>
@@ -72,22 +72,30 @@ const AbTop = ({location})=>{
                 
                 <Grid item className="itemText" md={12} xs={12}>
                     <MuiThemeProvider theme={theme}>            
-                    <Typography gutterBottom className={classes.h3}>Objective</Typography>
-                    <Typography variant="body" gutterBottom className={classes.textBody}>The main objective of Cultivate-Africa is to unlock a concerted multi-stakeholder partnership toward a sustained and effective response leading to averting potential adverse effects of the COVID-19 pandemic on food security and nutrition and food systems (production, distribution, trading and market access of agricultural commodities and services)..</Typography>                 
+                    <Typography variant="body" gutterBottom className={classes.textBody}>Welcome to Capacity Bay, Inc., the practical and hands-on eLearning platform and organization established to revolutionize learning and workforce development training for U. S. Veterans, transitioning service members, New Americans, immigrants, refugees as well as others in areas of substantial unemployment and technology deprived communities such as sub-Sahara Africa and other parts of the world. We also provide integrated IT consulting services for individuals, businesses and government agencies.</Typography>                 
+                    </MuiThemeProvider>
+                </Grid>
+
+                <Grid item className="itemText" md={12} xs={12}>
+                    <MuiThemeProvider theme={theme}>            
+                    <Typography gutterBottom className={classes.h3}>Our History</Typography>
+                    <Typography variant="body" gutterBottom className={classes.textBody}>Capacity Bay, Inc. began in 2014 with the vision of its founder Obi Nwachukwu to empower individuals and communities for in-demand employments by simplifying and making easy how learning online and hands-on in a practical way from the comfort of your home or office can benefit individuals and organizations—maximizing group training, promoting personalized development and more.</Typography>                 
+                    <Typography variant="body" gutterBottom className={classes.textBody}>Since its formation, Capacity Bay, Inc. has made meaningful strides as an innovative leader in the areas of information technology training.</Typography>                 
+
                     </MuiThemeProvider>
                 </Grid>
 
                 <Grid item className="itemText itemText2" md={12} xs={12}>
                     <MuiThemeProvider theme={theme}>            
-                    <Typography gutterBottom className={classes.h3}>What we do with data</Typography>
-                    <Typography variant="body" gutterBottom className={classes.textBody}>College isn’t just a place to learn. It’s where you’ll find a community filled with new people and have new experiences. It’s where you’ll make friends for life and learn important lessons about yourself. It's where you'll go to reach new heights.</Typography>                 
+                    <Typography gutterBottom className={classes.h3}>Vision</Typography>
+                    <Typography variant="body" gutterBottom className={classes.textBody}>Our vision is not only to create information technology jobs and careers for people in transition and poverty but to facilitate economic and social opportunity for them and their families.</Typography>                 
                     </MuiThemeProvider>
                 </Grid>
               
                 <Grid item className="itemText" md={12} xs={12}>
                     <MuiThemeProvider theme={theme}>            
-                    <Typography gutterBottom className={classes.h3}>Data is gold</Typography>
-                    <Typography variant="body" gutterBottom className={classes.textBody}>College isn’t just a place to learn. It’s where you’ll find a community filled with new people and have new experiences. It’s where you’ll make friends for life and learn important lessons about yourself. It's where you'll go to reach new heights.</Typography>                 
+                    <Typography gutterBottom className={classes.h3}>Mission</Typography>
+                    <Typography variant="body" gutterBottom className={classes.textBody}>The Mission of Capacity Bay, Inc. is simple: build the capacity of U. S. Veterans, transitioning service members, New Americans, immigrants, refugees as well as others living in areas of substantial unemployment and technology deprived communities such as sub-Sahara Africa and other parts of the world.</Typography>                 
                     </MuiThemeProvider>
 
                     
