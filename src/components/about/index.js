@@ -29,7 +29,7 @@ const useStyles= makeStyles(()=>({
         top: '190px',
         left: '40%',
         [theme.breakpoints.down('md')]:{
-            fontSize: '1rem',
+            fontSize: '1.5rem',
             position: 'absolute',
             top: '65px',
             right: '0',
@@ -39,16 +39,25 @@ const useStyles= makeStyles(()=>({
 
     h3:{
         fontSize: '2rem',
-        [theme.breakpoints.down('sm')]:{
-            fontSize: '1rem',
+        [theme.breakpoints.down('xs')]:{
+            fontSize: '1.5rem',
         }
     },
- 
+    stickyIcons:{
+        height: '200px',
+        width:'40px',
+        position: 'fixed',
+        right: '0',
+        top: '150px',
+        height: '200px',
+        backgroundColor: 'green',
+    }
 }))
 const AbTop = ({location})=>{
     const classes = useStyles()    
     return( 
             <Grid container className="gridCont">
+                <div className={classes.stickyIcons}></div>
                 <Grid item className="gridItem" xs={12}>
                     <MuiThemeProvider theme={theme}>            
                     <Typography variant="h1" gutterBottom className={classes.TypographyText}>What is CapacityBay</Typography>                  

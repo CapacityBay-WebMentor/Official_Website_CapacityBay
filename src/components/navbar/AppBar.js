@@ -51,7 +51,8 @@ const useStyles= makeStyles((theme)=>({
         fontWeight: '600',
         '&:hover':{
             color: 'black',
-            listStyle: 'none',           
+            textDecoration: 'none',
+            color: 'green',           
         },
     },
   

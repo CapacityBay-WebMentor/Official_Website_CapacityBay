@@ -32,7 +32,7 @@ const Section3 = (props)=>{
             <div className="section3">
                 <Grid container md={6} xs={10} sm={10}className="content">
                     <div className="contentH1">
-                        <Typography className={classes.Typography} variant="h3">Your complete college application guide</Typography>
+                        <Typography className={classes.Typography} variant="h3">Your complete cohort application guide</Typography>
                         <img src={book}  className='book'/>
                     </div>
                     <div className="contentButtonCont">

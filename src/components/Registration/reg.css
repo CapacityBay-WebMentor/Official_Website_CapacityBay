@@ -18,10 +18,8 @@
     background: transparent;
     opacity: 1.5;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     padding-left: 100px;
-    
 }
 .agree{
     display: flex;
@@ -103,22 +101,91 @@
     max-width: 38%;
     height: 500px;
     margin: 0 auto;
-    background-color: #f1f5f8;
+    background-color: #9dff89;
     border-radius: 15px;
     padding: 2px 25px;
 }
-
+.realContLogin{
+    max-width: 30%;
+    height: 550px;
+    padding: 10px 26px;
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color: #9dff89;
+    transform: translateY(30px);
+}
+.errors{
+    position: absolute;
+    bottom: -17px;
+    left: 50px;
+    color: red;
+    font-size: .8rem;
+}
 .inputText{
     width: 100%;
     height: 45px;
     font-size: 16px;
     border: none;
     transition: all 0.3s ease;   
-    background-color: rgb(100, 180, 117); 
+    background-color: rgb(166, 226, 179); 
     padding-left: 10px;
+    color: rgb(95, 92, 92);
+}
+.buttonr{
+    width: 100%;
+    background-color: #a6e2b3;
+    height: 50px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    transition: .3s ease;
+}
+.buttonr:hover{
+    background-color:#008000;
     color: white;
 }
-
+.buttonrr{
+    background-color: #008000;
+    width: 100%;
+    height: 50px;
+    color: white;
+    border: none;
+    transition: .2s ease;
+    border-radius: 5px;
+    transition: .3s ease;
+}
+.accLogin{
+    background-color: #a6e2b3;
+    width: 100%;
+    height: 50px;
+    color: black;
+    border: none;
+    transition: .2s ease;
+    border-radius: 5px;
+    transition: .3s ease;
+}
+.accLogin:hover{
+    background-color: #008000;
+    color: white;
+}
+.nextStepLogin{
+    background-color: #008000;
+    width: 100%;
+    height: 50px;
+    color: white;
+    border: none;
+    transition: .2s ease;
+    border-radius: 5px;
+    transition: .3s ease;
+}
+.nextStepLogin:hover{
+    background-color:#008000;
+    color: white;
+    transform: translateY(-3px);
+}
+.buttonrr:hover{
+    transform: translateY(-3px);
+}
 .radioGroup{
     display: flex;
     justify-content: space-between;
@@ -131,10 +198,10 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100px;
+    height: 130px;
     margin-top: 40px;
-    background-color: red;
     position: relative;
+    
 }
 .threeSets span{
     font-size: .59rem;
@@ -158,6 +225,9 @@
     color: rgb(248, 248, 248);
     background-color: #1937e4;
     padding: 9px 243px;
+}
+.contentHead{
+    margin-bottom: 70px;
 }
 .icon{
     position: absolute;
@@ -208,9 +278,15 @@
     margin-top: 40px;
 }
 .sty{
-    padding: 9px;
-    border-radius: 8px;
-    font-size: .8em;
+    width: 100%;
+    background-color: #a6e2b3;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
 }
 .reg{
     width: 45%;
@@ -219,17 +295,25 @@
 .sty:hover{
     text-decoration: none;
     color: white;
+    background-color: #008000;
 }
 .acc{
-    background-color: #1937e4;
+    background-color:#008000;
     color: white;
     cursor: pointer;
+    transition: .2s ease;
 }
-.acc::hover{
-    transform: translateY(13px);
+.acc:hover{
+    box-shadow: 2px solid  rgb(110, 108, 108);
+    transform: translateY(-3px);
+    color: white;
 }
 .getSt{
     background-color:#dee9f9;
+    color:#008000;
+}
+.getSt:hover{
+    color: green;
 }
 /* .getStarted p{
     margin-top: 80px;
@@ -297,7 +381,11 @@
     margin: 0 auto;
     margin-bottom: 10px;
 }
-
+@media(max-width: 786px){
+    .realCont{
+        max-width: 900px;
+    }
+}
 @media(max-width: 786px){
     .reg-wrapper{
         height: auto;
@@ -326,6 +414,12 @@
     }
     .form{
         flex-direction: column;
+    }
+    .realContLogin{
+        max-width: 75%;
+        height: 550px;
+        transform: translateY(30px);
+        background-color: #dee9f9;
     }
 }
 

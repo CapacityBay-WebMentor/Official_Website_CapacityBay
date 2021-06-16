@@ -17,6 +17,7 @@ import Footer from './footer/footerComponent'
 import DrawerNav from '../components/navbar/DrawerComponent/drawer'
 import DrawerComponent from "../components/navbar/DrawerComponent/drawer"
 
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -31,14 +32,12 @@ const Layout = ({ children }) => {
   
   // `
   const [theme, setTheme] = useState('dark')
-
-  const themeToggler = ()=>{
-    theme === 'light' ? setTheme('dark') : setTheme('light')
+  const themeToggler = ()=>{theme === 'light' ? setTheme('dark') : setTheme('light')
   }
 
   return (
-    <>
 
+    <>
       <div>
           <Header />
           <DrawerComponent />

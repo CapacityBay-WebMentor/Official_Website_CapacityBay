@@ -26,8 +26,8 @@ function Home2() {
               src={Ballon} alt="air balloon icon" />
               <h2>Plan Your Future</h2>
               <div className="future-texts">
-                        <p>Get connected with everything you need to apply to college, research financial aid and
-                            scholarships, and get advice from counselors, advisors and mentors.</p>
+                        <p>Get connected with mentors specialized in helping you ace your career goals, you will master the required skills needed to succeed
+                        alongside professional advisors and mentors.</p>
                     </div>
               </div>
           </div>
@@ -37,9 +37,7 @@ function Home2() {
                     <div className="img-holder">
                     <img src={Learn} width="80px" height="80px" alt="Learn" />
                     </div>
-                    <a href="#">
-                        <h5>Why learning matters</h5>
-                        </a>
+                    <a href="#"><h5>Why learning matters</h5></a>
                         <div className="d-lg-block d-lg-block">
                         <p>College is worth it. Your future is worth it. You are worth it.</p>
                         </div>
@@ -52,7 +50,7 @@ function Home2() {
                     <img src={Credit} width="80px" height="80px" alt="Credit" />
                     </div>
                     <a href="#">
-                        <h5>Paying for college</h5>
+                        <h5>Paying for your knowledge</h5>
                         </a>
                         <div className="d-lg-block d-lg-block">
                         <p>There are lots of options available to you. We can help you find them.</p>
@@ -66,7 +64,7 @@ function Home2() {
                     <img src={Map} width="80px" height="80px" alt="Map" />
                     </div>
                     <a href="#">
-                        <h5>Your college roadmap</h5>
+                        <h5>Your career roadmap</h5>
                         </a>
                         <div className="d-lg-block d-lg-block">
                         <p>The path may seem unclear. We can help you find your&nbsp;way.</p>
