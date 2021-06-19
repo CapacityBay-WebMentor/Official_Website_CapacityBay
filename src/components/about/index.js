@@ -8,7 +8,7 @@ import { colors, Grow, useMediaQuery, useTheme} from "@material-ui/core"
 import manBall from  '../../images/manBall.svg'
 import buildSon from  '../../images/buildSon.svg'
 import { red } from '@material-ui/core/colors';
-
+import { FaBeer } from "@react-icons/all-files/fa/FaBeer";
 
 
 let theme = createMuiTheme()
@@ -51,13 +51,18 @@ const useStyles= makeStyles(()=>({
         top: '150px',
         height: '200px',
         backgroundColor: 'green',
+        display: 'flex',
+        flexDirection: 'column',
     }
 }))
 const AbTop = ({location})=>{
     const classes = useStyles()    
     return( 
             <Grid container className="gridCont">
-                <div className={classes.stickyIcons}></div>
+                <div className={classes.stickyIcons}>
+                   
+                   
+                </div>
                 <Grid item className="gridItem" xs={12}>
                     <MuiThemeProvider theme={theme}>            
                     <Typography variant="h1" gutterBottom className={classes.TypographyText}>About CapacityBay Inc</Typography>                  

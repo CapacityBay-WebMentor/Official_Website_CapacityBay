@@ -11,6 +11,7 @@
     "@fortawesome/react-fontawesome": "^0.1.14",
     "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "^4.11.2",
+    "@react-icons/all-files": "^4.1.0",
     "@splidejs/react-splide": "^0.4.4",
     "animejs": "^3.2.1",
     "bootstrap": "^4.6.0",
