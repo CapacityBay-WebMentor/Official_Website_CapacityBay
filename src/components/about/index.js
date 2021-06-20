@@ -8,34 +8,13 @@ import { colors, Grow, useMediaQuery, useTheme} from "@material-ui/core"
 import manBall from  '../../images/manBall.svg'
 import buildSon from  '../../images/buildSon.svg'
 import { red } from '@material-ui/core/colors';
-import { FaBeer } from "@react-icons/all-files/fa/FaBeer";
+import aboutBanner from '../../images/aboutBanner.png'
 
 
 let theme = createMuiTheme()
 theme = responsiveFontSizes(theme);
 
 const useStyles= makeStyles(()=>({
-
-    TypographyText:{
-        color: 'black',
-        fontWeight: 500,
-        fontFamily:['-appleMacSystemFont','sans-serif'].join(','),
-        paddingBottom: 40,
-        fontSize: '2rem',
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        position: 'absolute',
-        top: '190px',
-        left: '40%',
-        [theme.breakpoints.down('md')]:{
-            fontSize: '1.5rem',
-            position: 'absolute',
-            top: '65px',
-            right: '0',
-            fontWeight: 700,
-        }
-    },
 
     h3:{
         fontSize: '2rem',
@@ -53,21 +32,19 @@ const useStyles= makeStyles(()=>({
         backgroundColor: 'green',
         display: 'flex',
         flexDirection: 'column',
-    }
+    },
+  
 }))
 const AbTop = ({location})=>{
     const classes = useStyles()    
     return( 
+        <>
             <Grid container className="gridCont">
                 <div className={classes.stickyIcons}>
                    
                    
                 </div>
-                <Grid item className="gridItem" xs={12}>
-                    <MuiThemeProvider theme={theme}>            
-                    <Typography variant="h1" gutterBottom className={classes.TypographyText}>About CapacityBay Inc</Typography>                  
-                    </MuiThemeProvider>
-                </Grid>
+               
                 <Grid item className="itemLower h" sm={6} xs={6}>
                     <img src={manBall}/>
                 </Grid>    
@@ -76,6 +53,7 @@ const AbTop = ({location})=>{
                 </Grid>   
                 
                 <Grid item className="itemText" md={12} xs={12}>
+                <Typography gutterBottom className={classes.h3}>What is CapacityBay</Typography>
                     <MuiThemeProvider theme={theme}>            
                     <Typography variant="body" gutterBottom className={classes.textBody}>Welcome to Capacity Bay, Inc., the practical and hands-on eLearning platform and organization established to revolutionize learning and workforce development training for U. S. Veterans, transitioning service members, New Americans, immigrants, refugees as well as others in areas of substantial unemployment and technology deprived communities such as sub-Sahara Africa and other parts of the world. We also provide integrated IT consulting services for individuals, businesses and government agencies.</Typography>                 
                     </MuiThemeProvider>
@@ -106,6 +84,8 @@ const AbTop = ({location})=>{
                     
                 </Grid>
                 </Grid>
+                <div class="clear"></div>
+      </>          
     )
 }
 

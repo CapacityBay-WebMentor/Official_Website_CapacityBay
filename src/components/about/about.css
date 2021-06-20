@@ -1,17 +1,16 @@
 .about-wrap{
     width: 100%;
     background-color:#f3f3f3;
-    margin-bottom: 300px;
 }
 .itemText{
-    height: 350px;
-    padding: 57px 100px;
+    height: 200px;
+    padding: 57px 140px;
     margin-top: 100px;
     background-color: #f3f3f3;
     font-size: 1.3rem;
 }
 .itemText2{
-    background-color: #81d88c; 
+
 }
 .itemText3{
     background-color: #9a98db; 
@@ -42,7 +41,7 @@
     background-color: darkcyan;
 }
 .h{
-    max-height: 350px;
+    max-height: 250px;
     height: 700px;
 }
 .item-space{
@@ -50,9 +49,13 @@
     padding: 40px;
 }
 .gridCont{
-        background-color: '#4a4a4a';
+    background-image: url(../../images/aboutBanner.png);
 }
-
+.clear{
+   width: 100%;
+   height: 200px;
+   background-color: #f3f3f3; 
+}
 @media(max-width: 786px){
     .itemLower img{
         max-width: 50%; 
@@ -72,5 +75,13 @@
         position: absolute;
         bottom: 0;
         left: 70px;
+      }
+      .itemText{
+        height: 200px;
+        padding: 100px 50px;
+        font-size: 1em;
+      }
+      .h{
+        max-height: 100px;
       }
 }

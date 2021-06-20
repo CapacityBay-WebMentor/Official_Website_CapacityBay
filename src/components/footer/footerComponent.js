@@ -25,7 +25,7 @@ const Footer = ()=>{
         <>
             <div className="footer">
             <div className="wrapFooter">
-                <Grid container spacing={2} className="topLine">
+                <Grid container className="topLine">
                     <Grid item md={4} xs={10} className={classes.fgrid}>  
                     <div className="footerCont">
                         <div className="con1">
@@ -43,13 +43,13 @@ const Footer = ()=>{
 
                     <Grid item md={4} xs={12} className={classes.fgrid}>   
                     <div className="con1">
-                    <h3>Quick links</h3>
-                    
-                    <ul className="footer-ul">
-                    <li>9701 Apollo Drive suite 301 Largo MD 20774</li>
-                    <li>info@capacitybay.org</li>
-                    <li>Mon.-Fri.: 10-20 Sun.: 12-16</li>
-                    </ul>
+                        <h3>Quick links</h3>
+                        
+                        <ul className="footer-ul">
+                            <li>9701 Apollo Drive suite 301 Largo MD 20774</li>
+                            <li>info@capacitybay.org</li>
+                            <li>Mon.-Fri.: 10-20 Sun.: 12-16</li>
+                        </ul>
                     </div>                 
                     </Grid>
 

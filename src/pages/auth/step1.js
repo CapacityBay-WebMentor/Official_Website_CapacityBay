@@ -9,6 +9,7 @@ import { Link } from "gatsby"
 import back from '../../images/arrow-back.png'
 import { yellow } from '@material-ui/core/colors';
 import NavLogo from '../../images/Capacity-Bay-4-footer.png'
+import { navigate } from "gatsby";
 
 
 const useStyles= makeStyles((theme)=>({
@@ -37,7 +38,7 @@ function Intro() {
         <Layout>
             <div className="reg-wrapper">
                 <Grid container>
-                    <Grid item xs={12} className="go-back-link"><Link to="/register" className="link-back">Back<img src={back} /></Link></Grid>
+                    <Grid item xs={12} className="go-back-link" onClick={() => navigate(-1)}><Link to="/register" className="link-back">Back<img src={back} /></Link></Grid>
                     <Grid item xs={12} className="text-container">
                         <img src={NavLogo} className={classes.img}/>
                     </Grid>

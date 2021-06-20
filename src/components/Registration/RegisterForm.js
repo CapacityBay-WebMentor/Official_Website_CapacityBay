@@ -9,6 +9,7 @@ import back from '../../images/arrow-back.png'
 import NavLogo from '../../images/Capacity-Bay-4-footer.png'
 import { red } from '@material-ui/core/colors';
 import {useFormik} from 'formik'
+import { navigate } from "gatsby";
 import { 
     BsFillPersonFill, 
     BsFillAwardFill,
@@ -172,7 +173,7 @@ function RegisterForm() {
     return (
         <div className="reg-wrapper">
             <Grid container className="clean">
-                <Grid item xs={12} className="go-back-link"><Link to="/register" className="link-back">Back<img src={back} /></Link></Grid>
+                <Grid item xs={12} className="go-back-link" onClick={() => navigate(-1)}><Link to="/register" className="link-back">Back<img src={back} /></Link></Grid>
                 <Grid item xs={12} className="text-container">
                     <img src={NavLogo} alt="" className={classes.img}/>
                 </Grid>

@@ -6,8 +6,8 @@ import { makeStyles } from '@material-ui/core/styles'
 import { Typography, responsiveFontSizes, createMuiTheme, ThemeProvider, MuiThemeProvider  } from '@material-ui/core';
 import { colors, Grow, useMediaQuery, useTheme } from "@material-ui/core"
 import { Link } from "gatsby"
-import { yellow } from '@material-ui/core/colors';
 import back from '../images/arrow-back.png'
+import { navigate } from "gatsby";
 import { 
     BsFillPersonFill, 
     BsFillAwardFill,
@@ -61,7 +61,7 @@ function Login() {
         <Layout>
             <div className="reg-wrapper">
                 <Grid container>
-                    <Grid item xs={12} className="go-back-link"><Link to="/register" className="link-back">Back<img src={back} /></Link></Grid>
+                    <Grid item xs={12} className="go-back-link" onClick={() => navigate(-1)}><Link to="/register" className="link-back">Back<img src={back} /></Link></Grid>
                     <Grid item xs={12} className="text-container">
                     
                     </Grid>
