@@ -10,6 +10,7 @@ import NavLogo from '../../images/Capacity-Bay-4-footer.png'
 import { red } from '@material-ui/core/colors';
 import {useFormik} from 'formik'
 import { navigate } from "gatsby";
+import selectIcon from '../../images/icons/select.svg'
 import { 
     BsFillPersonFill, 
     BsFillAwardFill,
@@ -192,7 +193,15 @@ function RegisterForm() {
                                 <div className={classes.inputWrap}><span className = "inlineSpan3 inlineSpan"><BsFillEnvelopeFill className="icon"/></span><input type="text" {...formik.getFieldProps('email')} name="email" placeholder="Email" className="inputText"/>{formik.touched.email && formik.errors.email ? <div className="errors">{formik.errors.email}</div> : null }</div>
                                 <div className={classes.inputWrap}><span className = "inlineSpan4 inlineSpan"><BsFilePost className="icon"/></span><input type="text" {...formik.getFieldProps('phone')} name="phone" placeholder="Phone" className="inputText"/>{formik.touched.phone && formik.errors.phone ? <div className="errors">{formik.errors.phone}</div> : null }</div>
                                 <div className={classes.inputWrap}><span className = "inlineSpan5 inlineSpan"><BsFillUnlockFill className="icon"/></span><input type="text"  {...formik.getFieldProps('password')} name="password" placeholder="Password" className="inputText"/>{formik.touched.password && formik.errors.password ? <div className="errors">{formik.errors.password}</div> : null }</div>
-                                <div className={classes.inputWrap}><span className = "inlineSpan6 inlineSpan"><BsHeartFill className="icon"/></span><input type="text" {...formik.getFieldProps('gender')} name="gender" placeholder="Gender" className="inputText"/>{formik.touched.gender && formik.errors.gender ? <div className="errors">{formik.errors.gender}</div> : null }</div>
+                                <div className={classes.inputWrap}><span className = "inlineSpan6 inlineSpan"><BsHeartFill className="icon"/></span>
+                                <select {...formik.getFieldProps('gender')} name="gender" placeholder="Gender" className="inputText selectDiv">
+                                {formik.touched.gender && formik.errors.gender ? <div className="errors">{formik.errors.gender}</div> : null }
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="others">Others</option>
+                                </select>
+                                    <img src={selectIcon} className="selectIcon"/>
+                                </div>
                                 <div className={classes.inputWrap}><span className = "inlineSpan7 inlineSpan"><BsPeopleFill className="icon"/></span><input type="text" {...formik.getFieldProps('mstatus')} name="mstatus" placeholder="Marital Status" className="inputText"/>{formik.touched.mstatus && formik.errors.mstatus ? <div className="errors">{formik.errors.mstatus}</div> : null }</div>
                                 <div className={classes.inputWrap}><span className = "inlineSpan8 inlineSpan"><BsGeo className="icon"/></span><input type="text" {...formik.getFieldProps('address')} name="address" placeholder="Address" className="inputText"/>{ formik.touched.address &&formik.errors.address ? <div className="errors">{formik.errors.address}</div> : null }</div>
                                 <div className={classes.inputWrap}><span className = "inlineSpan9 inlineSpan"><BsHouseFill className="icon"/></span><input type="text" {...formik.getFieldProps('city')} name="city" placeholder="City" className="inputText"/>{formik.touched.city && formik.errors.city ? <div className="errors">{formik.errors.city}</div> : null }</div>

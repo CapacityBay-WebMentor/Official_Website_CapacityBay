@@ -381,6 +381,20 @@
     margin: 0 auto;
     margin-bottom: 10px;
 }
+.selectIcon{
+    width: 20px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+.selectDiv {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
 @media(max-width: 786px){
     .realCont{
         max-width: 900px;
