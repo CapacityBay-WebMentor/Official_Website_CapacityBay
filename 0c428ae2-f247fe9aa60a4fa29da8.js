@@ -1,2 +1,0 @@
-(self.webpackChunkgatsby_capabay=self.webpackChunkgatsby_capabay||[]).push([[13],{1852:function(a,t,e){"use strict";e.d(t,{HHm:function(){return u}});var n=e(1046);function u(a){return(0,n.w_)({tag:"svg",attr:{viewBox:"0 0 16 16",fill:"currentColor"},child:[{tag:"path",attr:{fillRule:"evenodd",d:"M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 100-6 3 3 0 000 6z",clipRule:"evenodd"}}]})(a)}}}]);
-//# sourceMappingURL=0c428ae2-f247fe9aa60a4fa29da8.js.map
