@@ -4,12 +4,13 @@ module.exports = {
     description: `Kick off your next great goal with programs and mentorship, might need.`,
     author: `@nnahnnamdi`,
   },
-  pathPrefix: "/Official_website",
+  pathPrefix: "/Official_Website_CapacityBay",
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-plugin-styled-components`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
@@ -33,5 +34,6 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
      `gatsby-plugin-offline`,
+     
   ],
 }

@@ -18,6 +18,9 @@ const useStyles = makeStyles((theme)=>({
     car:{
         position: 'absolute',
         top: 0,
+    },
+    body:{
+        backgroundColor: 'red',
     }
 }))
 

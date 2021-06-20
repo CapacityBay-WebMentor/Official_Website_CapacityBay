@@ -22,11 +22,11 @@ const useStyles= makeStyles((theme)=>({
         fontSize: '3em',
         color: 'white',
         fontWeight: '700',
-        maxWidth: '800px',
+        maxWidth: '500px',
         [theme.breakpoints.down('md')]:{
             fontSize: '1rem',
             marginTop: '70px',
-            width: '400px',
+            width: '300px',
         },
         [theme.breakpoints.up('md')]:{
             fontSize: '2rem',
@@ -41,6 +41,8 @@ const useStyles= makeStyles((theme)=>({
     h3: {
         color: '#af221f',
         fontSize: '1.5rem',
+        paddingLeft: '105px',
+        marginTop: '11px',
         [theme.breakpoints.down('md')]:{
             paddingLeft: '20px',
         }
