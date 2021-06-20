@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { makeStyles, createMuiTheme, ThemeProvider, MuiThemeProvider, responsiveFontSizes } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid';
-import { Typography, Button, withTheme, IconButton } from "@material-ui/core"
+import { Typography, Button } from "@material-ui/core"
 import Paper from '@material-ui/core/Paper'
 import { TweenMax, TimelineLite, Power2, Elastic, CSSPlugin } from "gsap/all";
 import { useState} from 'react'

@@ -1,21 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 .footer{
     width: 100%;
     background-color: #4a4a4a;
-    min-height: 400px;
     position: relative;
 }
 .wrapFooter{
-    width: 90%;
+    width: 1200px;
     margin: 0 auto;
 }
 .wrapFooter h3{
     color: blanchedalmond;
 }
-.topLine{
-    min-height: 200px;
-    position: relative;
-    padding-top: 20px;
-}
+
 .bottomLine{
     height: 80px;
     border-top: 2px solid #01c5cd;
@@ -54,6 +54,9 @@ ul li{
     list-style: none;
     margin-left: 5px;
     font-size: 16px;
+}
+.set2{
+    justify-self: flex-end;
 }
 .con1 p{
     color: blanchedalmond;
