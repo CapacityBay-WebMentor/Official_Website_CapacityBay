@@ -7,6 +7,8 @@ import {useState, useEffect} from 'react'
 //import { Splide, SplideSlide } from '@splidejs/react-splide';
 import './landing.css'
 import { Typography } from '@material-ui/core'
+import { StaticImage } from 'gatsby-plugin-image'
+import landing from '../../images/landing_bg.jpg'
 
 
 
@@ -46,6 +48,13 @@ const useStyles= makeStyles((theme)=>({
         [theme.breakpoints.down('md')]:{
             paddingLeft: '20px',
         }
+    },
+    landingImg:{
+        position: 'absolute',
+        top: 0,
+        width: '100%',
+        heigth: '100%',
+        zIndex: 3000,
     }
 }))
 
@@ -57,19 +66,10 @@ const LandingComponent = ({location})=>{
 
     const classes = useStyles()    
     return( 
-            <Grid container className={classes.gridCont}>    
-                <div className="generalDiv"> 
-                    {slides.map((slide)=>(
-                        <div className="example2" key={slide.id}>
-                        <Typography className={classes.heading}>{slide.first}</Typography>
-                        <Typography variant="h3" className={classes.h3}>{slide.second}</Typography>
-                        </div>
-                    ))}    
-                </div>
-                <div className="img1"></div>
-                <div className="img2"></div>
-                <div className="img3"></div> 
-           
+            <Grid container className={classes.gridCont}> 
+                <Grid item md={12}>   
+                    <StaticImage src={ landing } className={classes.landingImg} alt="A picture of a black girl sitting"/>
+                </Grid>
              </Grid>
     )
 }
