@@ -36,20 +36,17 @@ const useStyles= makeStyles((theme)=>({
     img:{
         width: '140px',
     },
-    formCont:{
-        maxWidth: '800px',
-        margin: '0 auto',
-    },
     formContainer:{
         maxWidth: '800px',
         backgroundColor: '#dee9f9',
         paddingTop: '30px',
         borderRadius: '15px',
         transform: 'translateY(10px)',
+        margin: '0 auto',
         [theme.breakpoints.down('sm')]:{
-            maxWidth: '90%',
             borderRadius: '0',
-            margin: '0 auto'
+            width: '90%',
+            
         }
     },
     flexCont:{
@@ -58,7 +55,7 @@ const useStyles= makeStyles((theme)=>({
         justifyContent: 'space-between',
         marginBottom: '40px',
         marginTop: '20px',
-        padding: '10px 50px',
+        padding: '10px 10px',
         [theme.breakpoints.down('xs')]:{
             padding: '10px 20px',
         }
@@ -69,9 +66,9 @@ const useStyles= makeStyles((theme)=>({
         display: 'flex',
         marginBottom: '15px',
         position: 'relative',
-        [theme.breakpoints.down('sm')]:{
+        [theme.breakpoints.down('xs')]:{
             width: '100%',           
-        }
+        },
     },
     myP:{
         textAlign: 'center',

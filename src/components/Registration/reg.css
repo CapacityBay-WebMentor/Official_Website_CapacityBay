@@ -368,7 +368,7 @@
     text-align: center;
 }
 .form{
-    width: 96%;
+    width: 90%;
     background-color: greenyellow;
     margin: 0 auto;
     padding: 10px;
@@ -444,5 +444,19 @@
     }
     .register-wrap{
         max-width: 90%;
+    }
+}
+@media(min-width: 300px){
+        .errors {
+        position: absolute;
+        bottom: -17px;
+        left: 50px;
+        color: red;
+        font-size: .6rem;
+        font-weight: bold;
+    }
+    .agree{
+        font-size: .7rem;
+        margin-left: 10px;
     }
 }

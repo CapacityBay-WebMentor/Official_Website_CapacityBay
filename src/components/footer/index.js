@@ -32,6 +32,10 @@ const useStyles= makeStyles((theme)=>({
         padding: 10,
         textAlign: 'center',
         color: 'white',
+        borderLeft: '2px ridge red',
+    },
+    [theme.breakpoints.down('xs')]:{
+        fontSize: '1rem',
     },
     listWrap:{
         display: 'flex',
