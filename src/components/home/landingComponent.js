@@ -8,7 +8,10 @@ import {useState, useEffect} from 'react'
 import './landing.css'
 import { Typography } from '@material-ui/core'
 import { StaticImage } from 'gatsby-plugin-image'
-import landing from '../../images/landing_bg.jpg'
+import landing from '../../../static/landing_bg.jpg'
+import Img from "gatsby-image"
+import {motion} from 'framer-motion'
+import { useStaticQuery, Link } from 'gatsby'
 
 
 
@@ -50,15 +53,12 @@ const useStyles= makeStyles((theme)=>({
         }
     },
     landingImg:{
-        position: 'absolute',
-        top: 0,
-        width: '100%',
-        heigth: '100%',
-        zIndex: 3000,
+      
     }
 }))
 
 const LandingComponent = ({location})=>{
+   
     const slides = [{first: "Welcome To The Workforce Development Exchange", second: "For US Veterance", id: 1}]
     
     const [seconds, setSeconds] = useState(0);
@@ -66,9 +66,15 @@ const LandingComponent = ({location})=>{
 
     const classes = useStyles()    
     return( 
-            <Grid container className={classes.gridCont}> 
-                <Grid item md={12}>   
-                    <StaticImage src={ landing } className={classes.landingImg} alt="A picture of a black girl sitting"/>
+            <Grid container> 
+                <Grid item>   
+                    <StaticImage 
+                    layout='fullwidth' 
+                    width='100%' 
+                    height={800} 
+                    src={landing}
+                    alt="A picture of a black girl sitting"
+                    />
                 </Grid>
              </Grid>
     )

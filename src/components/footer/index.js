@@ -44,7 +44,10 @@ const useStyles= makeStyles((theme)=>({
     },
     [theme.breakpoints.down('md')]:{
         justifyContent: 'space-around',
-    }
+    },
+    listIcon:{
+        color: 'white',
+    },
 }))
 
 const Footer = ()=>{
@@ -64,20 +67,20 @@ const Footer = ()=>{
                         <List component="nav" className={classes.listWrap} aria-label="contacts">
                                     <div className="set1">                        
                                         <ListItem button> 
-                                            <ListItemIcon>
+                                            <ListItemIcon className={classes.listIcon}>
                                                 <ExitToAppIcon />
                                             </ListItemIcon>                   
                                             <ListItemText primary="Login" />
                                         </ListItem>
                                     
                                         <ListItem button>
-                                            <ListItemIcon>
+                                            <ListItemIcon className={classes.listIcon}>
                                                 <AccessibilityIcon />
                                             </ListItemIcon>
                                             <ListItemText primary="Volunteer" />
                                         </ListItem>
                                         <ListItem button>
-                                            <ListItemIcon>
+                                            <ListItemIcon className={classes.listIcon}>
                                                 <PermContactCalendarIcon />
                                             </ListItemIcon>
                                             <ListItemText primary="Contact Us" />
@@ -85,14 +88,14 @@ const Footer = ()=>{
                                     </div>
                                     <div className={classes.set2}>                                 
                                         <ListItem button>
-                                            <ListItemIcon>
+                                            <ListItemIcon className={classes.listIcon}>
                                                 <RoomServiceIcon />
                                             </ListItemIcon>
                                             <ListItemText primary="Terms of service" />
                                         </ListItem>
                                     
                                         <ListItem button>
-                                            <ListItemIcon>
+                                            <ListItemIcon className={classes.listIcon}>
                                                 <ReportIcon />
                                             </ListItemIcon>
                                             <ListItemText primary="Covid19" />
@@ -106,20 +109,20 @@ const Footer = ()=>{
                         <List component="nav" className={classes.listWrap} aria-label="contacts">
                             <div className="set1">                        
                                 <ListItem button> 
-                                    <ListItemIcon>
+                                    <ListItemIcon className={classes.listIcon}>
                                         <ExitToAppIcon />
                                     </ListItemIcon>                   
                                     <ListItemText primary="Login" />
                                 </ListItem>
                             
                                 <ListItem button>
-                                    <ListItemIcon>
+                                    <ListItemIcon className={classes.listIcon}>
                                         <AccessibilityIcon />
                                     </ListItemIcon>
                                     <ListItemText primary="9701 Apollo Drive suite 301 Largo MD 20774" />
                                 </ListItem>
                                 <ListItem button>
-                                    <ListItemIcon>
+                                    <ListItemIcon className={classes.listIcon}>
                                         <PermContactCalendarIcon />
                                     </ListItemIcon>
                                     <ListItemText primary="Call us" />

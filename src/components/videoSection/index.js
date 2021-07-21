@@ -7,7 +7,9 @@ import { colors, Grow, useMediaQuery, useTheme} from "@material-ui/core"
 import manBall from  '../../images/manBall.svg'
 import obi from  '../../images/obi.jpg'
 import play from  '../../images/play.png'
-import { red } from '@material-ui/core/colors'
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import Card from '@material-ui/core/Card';
 import './vid.css'
 
 
@@ -23,7 +25,6 @@ const useStyles= makeStyles(()=>({
     },
     inside:{
         padding: '20px',
-        position: 'relative',
     },
     inside2:{
         color: 'white',
@@ -31,6 +32,14 @@ const useStyles= makeStyles(()=>({
     h3:{
         fontSize: '3rem'
     },
+    imgCard:{
+        backgroundColor: 'white',
+        padding: 10,
+    },
+    [theme.breakpoints.down('xs')]:{
+        padding: 0,
+    }
+   
 }))
 const VideoComponent = ({location})=>{
     function handleClick(){
@@ -39,12 +48,20 @@ const VideoComponent = ({location})=>{
     const classes = useStyles()    
     return( 
             <Grid container className={classes.gridCont}>
-                <Grid item className={classes.inside} xs={12} md={6} sm={6}>
-                  <img src={obi} className="obiImg"/>
-                  <img src={play} onClick={handleClick} className="playBtn"/>
-                  <div className="playNow">
-                    <div class="controls"></div>
-                  </div>
+                <Grid item className={classes.inside} xs={12} md={6}>
+                    <Card className={classes.imgCard}>
+                        <CardMedia
+                            component="img"
+                            alt="Mr Obi"
+                            height="500"
+                            image={ obi }
+                            title="Mr Obi"
+                        />
+                    </Card>
+                    
+                    <div div className="playNow">
+                        <div class="controls"></div>
+                    </div>
                 </Grid>
 
                 <Grid item className={classes.inside2} xs={12} md={6} sm={6}>

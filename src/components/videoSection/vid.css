@@ -1,13 +1,6 @@
 .obiImg{
-    width: 500px;
+    min-width: 500px;
     margin-left: 200px;
-}
-.playBtn{
-    width: 100px;
-    position: absolute;
-    top: 160px;
-    left: 425px;
-    cursor: pointer;
 }
 .rightCont{
     width: 100%;

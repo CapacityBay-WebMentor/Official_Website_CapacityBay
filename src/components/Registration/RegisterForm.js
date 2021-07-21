@@ -39,7 +39,7 @@ const useStyles= makeStyles((theme)=>({
     formContainer:{
         maxWidth: '800px',
         backgroundColor: '#dee9f9',
-        paddingTop: '30px',
+        padding: '30px 40px',
         borderRadius: '15px',
         transform: 'translateY(10px)',
         margin: '0 auto',
@@ -80,7 +80,7 @@ const useStyles= makeStyles((theme)=>({
     [theme.breakpoints.down('xs')]:{
         width: '100%',
         height: '150px',
-    }
+    },
 }))
 //Form field name attributes in an object
 const initialValues = {

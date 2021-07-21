@@ -1,3 +1,4 @@
+const path = require(`path`)
 module.exports = {
   siteMetadata: {
     title: `CapacitBay`,
@@ -7,24 +8,28 @@ module.exports = {
   pathPrefix: "/Official_Website_CapacityBay",
   plugins: [
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-image`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    `gatsby-plugin-image`,   
     {
       resolve: `gatsby-source-filesystem`,
-      resolve: `gatsby-plugin-styled-components`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        name: `pages`,
+        path: `${__dirname}/src/pages/`
       },
     },
-    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `image`,
+        path: `${__dirname}/static`
+      }
+    },
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`, 
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
-        short_name: `starter`,
+        short_name: `CapacityBay`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
